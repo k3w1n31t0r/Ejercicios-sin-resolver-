@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title></title>
+</head>
+<body>
+	<h1>Selecciona el segundo elemento de la lista</h1>
+	<div id="target" style="color: rgb(255, 255, 255); width: 150px; height: 100px; float: left; border: 1px solid rgb(34, 34, 34); background-color: rgb(245, 222, 179); margin: 10px; padding: 5px; background-position: initial initial; background-repeat: initial initial; ">
+		#target<br>
+		<select size="4" data-role="none" style="margin: 5px; color: rgb(34, 34, 34); ">
+			<option>primero</option>
+			<option>segundo(seleccioname)</option>
+			<option>tercero</option>
+		</select>
+	</div>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" >
+   
+        $("[option^='segundo(seleccioname)']")
+        
+		//Selecciona el segundo elemento de la lista
+        document.getElementById("#target").selectedIndex=0;
+	</script>
+</body>
+</html>

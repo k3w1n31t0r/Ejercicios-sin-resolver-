@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title></title>
+</head>
+<body>
+	<h1>Cambia el tamaño del div a su doble</h1>
+	<div id="target" style="color: #FFF; width: 150px; height: 100px; float: left; border: 1px solid #000; background-color: green; margin: 10px; padding: 5px; background-position: initial initial; background-repeat: initial initial; ">#target<br></div>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" >
+		//Cambia el tamaño del div a su doble
+        var height =$('#target').height();
+         var width =$('#target').width();
+        $('div#target').css('height', height*2);
+        $('div#target').css('width', width*2);
+	</script>
+</body>
+</html>
